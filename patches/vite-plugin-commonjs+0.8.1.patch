@@ -1,0 +1,26 @@
+diff --git a/node_modules/vite-plugin-commonjs/dist/index.js b/node_modules/vite-plugin-commonjs/dist/index.js
+index 9e8973b..73ebd5e 100644
+--- a/node_modules/vite-plugin-commonjs/dist/index.js
++++ b/node_modules/vite-plugin-commonjs/dist/index.js
+@@ -390,7 +390,7 @@ async function transformCommonjs({
+     return;
+   let ast;
+   try {
+-    ast = acorn.parse(code, { sourceType: "module", ecmaVersion: 2020 });
++    ast = acorn.parse(code, { sourceType: "module", ecmaVersion: "latest" });
+   } catch (error) {
+     return null;
+   }
+diff --git a/node_modules/vite-plugin-commonjs/dist/index.mjs b/node_modules/vite-plugin-commonjs/dist/index.mjs
+index faaa42a..586d5d0 100644
+--- a/node_modules/vite-plugin-commonjs/dist/index.mjs
++++ b/node_modules/vite-plugin-commonjs/dist/index.mjs
+@@ -388,7 +388,7 @@ async function transformCommonjs({
+     return;
+   let ast;
+   try {
+-    ast = parse(code, { sourceType: "module", ecmaVersion: 2020 });
++    ast = parse(code, { sourceType: "module", ecmaVersion: "latest" });
+   } catch (error) {
+     return null;
+   }

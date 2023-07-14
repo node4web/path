@@ -1,0 +1,10 @@
+<script type="module">
+  import resolve from "../src/resolve-browser.ts";
+
+  console.log(resolve());
+  console.log(resolve("/hello", "world"));
+  console.log(resolve("/hello", "./world"));
+  console.log(resolve("/hello/world", "./file.txt"));
+  console.log(resolve("/hello/world/", "./file.txt"));
+  console.log(resolve("/hello/world/", "../file.txt"));
+</script>
